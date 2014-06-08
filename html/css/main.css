@@ -1,9 +1,18 @@
 body{
   font-size:14px;
 }
+.ui-header h1.ui-title{
+  font-size:1.3em;
+}
+.ui-header h2.ui-title{
+  font-size:1.2em;
+}
 #logo {
   display:block;
   margin:0 auto;
-  max-width:20em;
-  width:100%;
+  max-width:23em;
+  width:100%;	
+}
+.ui-page{
+  position:static;
 }

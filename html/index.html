@@ -6,19 +6,22 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
 <link rel="stylesheet" href="css/main.css">
-<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<header>
-  <img src="SEDENA.jpg" alt="SEDENA" id="logo">
-</heade>
-<main>
-  <form>
-    <input type="text" name="usuario" placeholder="Usuario">
-    <input type="password" name="password" placeholder="Contraseña">
-    <input type="submit" name="login" value="Iniciar Sesión">
-  </form>
-</main>
-<footer>
-  Footer: Creado y contacto
-</footer>
+<div data-role="page">
+  <header data-role="header">
+    <img src="SEDENA.jpg" alt="SEDENA" id="logo">
+    <h1>Administración de Misiones SEDENA</h1>
+  </header>
+  <main data-role="content">
+    <form>
+      <input type="text" name="usuario" placeholder="Usuario">
+      <input type="password" name="password" placeholder="Contraseña">
+      <input type="submit" name="login" value="Iniciar Sesión">
+    </form>
+  </main>
+  <footer data-role="footer">
+    <p>Footer: Creado y contacto</p>
+  </footer>
+</div>
