@@ -32,6 +32,25 @@
     </header>
     <div data-role="content">
         CONTENIDO VERIFICAR EVENTO
+        <form>
+            <input type="text" name="text-6" id="text-6" value="" placeholder="Nombre del Evento">
+            <input type="text" data-role="date">
+            <input type="text" name="text-6" id="text-6" value="" placeholder="Direccion del Evento">
+
+            <a href="#popupParis" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="edificio1.jpg" alt="Paris, France" style="width:30%"></a>
+            <a href="#popupSydney" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="mapa1.jpg" alt="Sydney, Australia" style="width:30%"></a>
+            <div data-role="popup" id="popupParis" data-overlay-theme="b" data-theme="b" data-corners="false">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="edificio1.jpg" style="max-height:512px;" alt="Paris, France">
+            </div>
+            <div data-role="popup" id="popupSydney" data-overlay-theme="b" data-theme="b" data-corners="false">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img class="popphoto" src="mapa1.jpg" style="max-height:512px;" alt="Sydney, Australia">
+            </div>
+
+            <label for="text-6">Comentario:</label>
+           <textarea cols="40" rows="8" name="textarea-6" id="textarea-6" placeholder="Comentario"></textarea>
+            <input type="button" data-inline="true" value="Aprovada">
+            <input type="button" data-inline="true" value="Rechazada">
+        </form>
     </div>
     <footer data-role="footer">
         <p>Footer: Creado y contacto</p>
