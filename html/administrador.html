@@ -47,7 +47,7 @@
             </div>
 
             <label for="text-6">Comentario:</label>
-           <textarea cols="40" rows="8" name="textarea-6" id="textarea-6" placeholder="Comentario"></textarea>
+            <textarea cols="40" rows="8" name="textarea-6" id="textarea-6" placeholder="Comentario"></textarea>
             <input type="button" data-inline="true" value="Aprovada">
             <input type="button" data-inline="true" value="Rechazada">
         </form>
@@ -63,6 +63,22 @@
     </header>
     <div data-role="content">
         CONTENIDO ADMINISTRAR USUARIOS
+        <form>
+            <input type="text" name="text-6" id="text-6" value="" placeholder="Nombre(s)">
+            <input type="text" name="text-6" id="text-6" value="" placeholder="Apellido Paterno">
+            <input type="text" name="text-6" id="text-6" value="" placeholder="Apellido Materno">
+
+            <div class="ui-field-contain">
+                <label for="select-custom-21">Rol:</label>
+                <select name="select-custom-21" id="select-custom-21" data-native-menu="false">
+                    <option value="choose-one" data-placeholder="true">Seleccionar...</option>
+                    <option value="1">Usuario</option>
+                    <option value="2">Administrador</option>
+                </select>
+            </div>
+            <input type="button" data-inline="true" value="Registar">
+
+        </form>
     </div>
     <footer data-role="footer">
         <p>Footer: Creado y contacto</p>
