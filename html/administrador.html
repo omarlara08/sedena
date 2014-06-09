@@ -68,22 +68,17 @@
         <h2>Administrar Usuarios</h2>
     </header>
     <div data-role="content">
-        CONTENIDO ADMINISTRAR USUARIOS
         <form>
-            <input type="text" name="text-6" id="text-6" value="" placeholder="Nombre(s)">
-            <input type="text" name="text-el6" id="text-6" value="" placeholder="Apellido Paterno">
-            <input type="text" name="text-6" id="text-6" value="" placeholder="Apellido Materno">
+            <input type="text" name="text-6" placeholder="Nombre(s)">
+            <input type="text" name="text-el6" placeholder="Apellido Paterno">
+            <input type="text" name="text-7" placeholder="Apellido Materno">
 
-            <div class="ui-field-contain">
-                <label for="select-custom-21">Rol:</label>
-                <select name="select-custom-21" id="select-custom-21" data-native-menu="false">
-                    <option value="choose-one" data-placeholder="true">Seleccionar...</option>
-                    <option value="1">Usuario</option>
-                    <option value="2">Administrador</option>
-                </select>
-            </div>
-            <input type="button" data-inline="true" value="Registar">
-
+            <select name="select-custom-21" id="select-custom-21" data-native-menu="false">
+              <option value="choose-one" data-placeholder="true">Rol</option>
+              <option value="1">Usuario</option>
+              <option value="2">Administrador</option>
+            </select>
+            <input type="button" value="Registrar">
         </form>
     </div>
     <footer data-role="footer">
