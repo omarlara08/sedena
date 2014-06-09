@@ -13,51 +13,65 @@
 <script src="https://rawgit.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.8/jquery.mobile.datepicker.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <div data-role="page" id="home">
-  <header data-role="header">
-    <img src="SEDENA.jpg" alt="SEDENA" id="logo">
-    <h1>Administración de Misiones SEDENA</h1>
-  </header>
-  <div data-role="content">
-    <ul data-role="listview">
-      <li>
-        <a href="#evento1">
-          <h2>Evento: Evento 1</h2>
-          <p>Fecha: DD-MM-AA</p>
-        </a>
-      </li>
-      <li>
-        <a href="#evento2">
-          <h2>Evento: Evento 2</h2>
-          <p>Fecha: DD-MM-AA</p>
-        </a>
-      </li>
-    </ul>
-  </div>
-  <footer data-role="footer">
-    <p>Footer: Creado y contacto</p>
-  </footer>
+    <header data-role="header">
+        <img src="SEDENA.jpg" alt="SEDENA" id="logo">
+        <h1>Administración de Misiones SEDENA</h1>
+    </header>
+    <div data-role="content">
+        <ul data-role="listview">
+            <li>
+                <a href="#evento1">
+                    <h2>Evento: Evento 1</h2>
+                    <p>Fecha: DD-MM-AA</p>
+                </a>
+            </li>
+            <li>
+                <a href="#evento2">
+                    <h2>Evento: Evento 2</h2>
+                    <p>Fecha: DD-MM-AA</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <footer data-role="footer">
+        <p>Footer: Creado y contacto</p>
+    </footer>
 </div>
 <div data-role="page" id="evento1">
-  <header data-role="header">
-    <a href="#home" class="ui-link ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all">Volver</a>
-    <h2>Evento 1</h2>
-  </header>
-  <div data-role="content">
-    CONTENIDO CARGAR INFORMACIÓN DEL EVENTO
-  </div>
-  <footer data-role="footer">
-    <p>Footer: Creado y contacto</p>
-  </footer>
+    <header data-role="header">
+        <a href="#home" class="ui-link ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all">Volver</a>
+        <h2>Evento 1</h2>
+    </header>
+    <div data-role="content">
+        CONTENIDO CARGAR INFORMACIÓN DEL EVENTO
+        <input type="text" name="text-6" id="text-6" value="" placeholder="Nombre del Evento">
+        <input type="text" data-role="date">
+        <input type="text" name="text-6" id="text-6" value="" placeholder="Direccion del Evento">
+        <input type="button" data-inline="true" value="Geolocalización">
+        <input type="file" data-clear-btn="true" name="file-2" id="file-2" value="Fotografia">
+        <textarea name="textarea-1" id="textarea-1" placeholder="Comentario"></textarea>
+        <input type="button" data-inline="true" value="Enviar">
+    </div>
+    <footer data-role="footer">
+        <p>Footer: Creado y contacto</p>
+    </footer>
 </div>
 <div data-role="page" id="evento2">
-  <header data-role="header">
-    <a href="#home" class="ui-link ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all">Volver</a>
-    <h2>Evento 2</h2>
-  </header>
-  <div data-role="content">
-    CONTENIDO VERIFICAR STATUS DEL EVENTO
-  </div>
-  <footer data-role="footer">
-    <p>Footer: Creado y contacto</p>
-  </footer>
+    <header data-role="header">
+        <a href="#home" class="ui-link ui-btn ui-icon-back ui-btn-icon-left ui-shadow ui-corner-all">Volver</a>
+        <h2>Evento 2</h2>
+    </header>
+    <div data-role="content">
+        CONTENIDO VERIFICAR STATUS DEL EVENTO
+        <input type="text" name="text-6" id="text-6" value="" placeholder="Nombre del Evento">
+        <input type="text" data-role="date">
+        <input type="text" name="text-6" id="text-6" value="" placeholder="Direccion del Evento">
+        <input type="button" data-inline="true" value="Geolocalización">
+        <input type="file" data-clear-btn="true" name="file-2" id="file-2" value="Fotografia">
+        <textarea name="textarea-1" id="textarea-1" placeholder="Comentario"></textarea>
+        <input type="button" data-inline="true" value="Enviar">
+    </div>
+    <footer data-role="footer">
+        <p>Footer: Creado y contacto</p>
+    </footer>
 </div>
