@@ -5,9 +5,12 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<link rel="stylesheet" href="https://rawgit.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.8/jquery.mobile.datepicker.css">
 <link rel="stylesheet" href="css/main.css">
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+<script src="https://rawgit.com/jquery/jquery-ui/1.10.4/ui/jquery.ui.datepicker.js"></script>
+<script src="https://rawgit.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.8/jquery.mobile.datepicker.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <div data-role="page" id="home">
     <header data-role="header">
@@ -55,34 +58,32 @@
         <h2>Crear Evento</h2>
     </header>
     <div data-role="content">
-        CONTENIDO CREAR EVENTO
-        <form>
-            <input id="nombreevento" type="text" placeholder="Nombre del Evento">
-            <input id="fechaevento" type="text" data-role="date">
-            <input id="direccionevento" type="text" placeholder="Direccion">          
-            <fieldset data-role="controlgroup">
-                <legend>Contro Necesario:</legend>
-                <input type="checkbox" name="checkbox-v-2a" id="checkbox-v-2a">
-                <label for="checkbox-v-2a">Fotografía</label>
-                <input type="checkbox" name="checkbox-v-2b" id="checkbox-v-2b">
-                <label for="checkbox-v-2b">Mapa</label>
-            </fieldset>
-
-            <div class="ui-field-contain">
-                <label for="select-custom-21">Asignar Uusario:</label>
-                <select name="select-custom-21" id="select-custom-21" data-native-menu="false">
-                    <option value="choose-one" data-placeholder="true">Seleccionar...</option>
-                    <option value="1">The 1st Option</option>
-                    <option value="2">The 2nd Option</option>
-                    <option value="3">The 3rd Option</option>
-                    <option value="4">The 4th Option</option>
-                </select>
-            </div>
-
-            <label for="textarea-1">Comentario:</label>
-            <textarea name="textarea-1" id="textarea-1"></textarea>
-        </form>       
-
+      <form>
+        <input id="nombreevento" type="text" placeholder="Nombre del Evento">
+        <input id="fechaevento" type="text" placeholder="Fecha del Evento" data-role="date">
+        <input id="direccionevento" type="text" placeholder="Direccion">          
+        <fieldset data-role="controlgroup">
+          <legend>Contro Necesario:</legend>
+          <label>
+            <input type="checkbox" name="checkbox-v-2a">
+            <span>Fotografía</span>
+          </label>
+          <label>
+            <input type="checkbox" name="checkbox-v-2b">
+            <span>Mapa</span>
+          </label>
+        </fieldset>
+        <div class="ui-field-contain">
+          <select name="select-custom-21" id="select-custom-21" data-native-menu="false">
+            <option value="choose-one" data-placeholder="true">Asignar Usuario</option>
+            <option value="1">The 1st Option</option>
+            <option value="2">The 2nd Option</option>
+            <option value="3">The 3rd Option</option>
+            <option value="4">The 4th Option</option>
+          </select>
+        </div>
+        <textarea name="textarea-1" id="textarea-1" placeholder="Comentario"></textarea>
+      </form>       
     </div>
     <footer data-role="footer">
         <p>Footer: Creado y contacto</p>
