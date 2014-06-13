@@ -11,6 +11,11 @@
 <script src="https://code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 <script src="https://rawgit.com/jquery/jquery-ui/1.10.4/ui/jquery.ui.datepicker.js"></script>
 <script src="https://rawgit.com/arschmitz/jquery-mobile-datepicker-wrapper/v0.1.8/jquery.mobile.datepicker.js"></script>
+<script>
+    $(function() {
+        $("#fecha").datepicker();
+    });
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <div data-role="page" id="home">
     <header data-role="header">
@@ -43,11 +48,11 @@
         <h2>Evento 1</h2>
     </header>
     <div data-role="content">
-        <input type="text" data-role="date" placeholder="Fecha">
+        <input type="text" id="fecha" data-role="date" placeholder="Fecha">
         <input type="button" data-inline="true" value="Geolocalización">
         <label>
-          <span>Fotografia</span>
-          <input type="file" data-clear-btn="true" name="file-2">
+            <span>Fotografia</span>
+            <input type="file" data-clear-btn="true" name="file-2">
         </label>
         <textarea name="textarea-1" placeholder="Comentario"></textarea>
         <input type="button" data-inline="true" value="Enviar">
@@ -67,8 +72,8 @@
         <input type="text" name="text-6" value="Av Revolucion 14 Col. Del valle">
         <input type="button" data-inline="true" value="Geolocalización">
         <label>
-          <span>Fotografia</span>
-          <input type="file" data-clear-btn="true" name="file-2">
+            <span>Fotografia</span>
+            <input type="file" data-clear-btn="true" name="file-2">
         </label>
         <textarea name="textarea-1" value="Comentario... Esto es una prueba"></textarea>
     </div>
